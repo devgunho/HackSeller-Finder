@@ -1,6 +1,3 @@
-from get_domains import *
-from file_manage import *
-from link_finder import link_crawler
 from urllib.request import urlopen
 import tldextract
 
@@ -36,6 +33,23 @@ def getaddrinfo(*args):
 
 
 socket.getaddrinfo = getaddrinfo
+
+# Road URL list file
+url_file = open("./target_urls.txt", 'r')
+web_urls = []
+while True:
+    line = url_file.readline()
+    if not line:
+        break
+    print(line)
+url_file.close()
+print(web_urls)
+
+# html_data_string = ''
+# received_response = urlopen(web_url)
+# if 'text/html' in received_response.getheader('Content-Type'):
+#     data_bytes = received_response.read()
+#     html_data_string = data_bytes.decode("latin-1")
 
 
 # class Crawl_bot:
