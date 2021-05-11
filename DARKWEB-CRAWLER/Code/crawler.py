@@ -41,15 +41,18 @@ while True:
     line = url_file.readline()
     if not line:
         break
-    print(line)
+    web_urls.append(line)
 url_file.close()
 print(web_urls)
 
-# html_data_string = ''
-# received_response = urlopen(web_url)
-# if 'text/html' in received_response.getheader('Content-Type'):
-#     data_bytes = received_response.read()
-#     html_data_string = data_bytes.decode("latin-1")
+
+# Request
+html_data_string = ''
+received_response = urlopen(web_urls[0])
+if 'text/html' in received_response.getheader('Content-Type'):
+    data_bytes = received_response.read()
+    html_data_string = data_bytes.decode("latin-1")
+    print(html_data_string)
 
 
 # class Crawl_bot:
