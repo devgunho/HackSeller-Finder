@@ -5,24 +5,35 @@ from urllib.request import urlopen
 import tldextract
 
 
-#Importing Stem libraries
+# Importing Stem libraries
 from stem import Signal
 from stem.control import Controller
-import socks, socket
+import socks
+import socket
 
-#Initiating Connection
+# Road torcc HashedControlPassowrd
+passoword_file = open("./HashedControlPassword", 'r')
+tor_auth_pass = passoword_file.readline()
+print("Your Tor Auth Password:", tor_auth_pass)
+passoword_file.close()
+
+# Initiating Connection
 with Controller.from_port(port=9051) as controller:
     controller.authenticate("insert-your-key")
     controller.signal(Signal.NEWNYM)
 
 # TOR SETUP GLOBAL Vars
-SOCKS_PORT = 9050  # TOR proxy port that is default from torrc, change to whatever torrc is configured to
+# TOR proxy port that is default from torrc, change to whatever torrc is configured to
+SOCKS_PORT = 9050
 socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5, "127.0.0.1", SOCKS_PORT)
 socket.socket = socks.socksocket
 
 # Perform DNS resolution through the socket
+
+
 def getaddrinfo(*args):
     return [(socket.AF_INET, socket.SOCK_STREAM, 6, '', (args[0], args[1]))]
+
 
 socket.getaddrinfo = getaddrinfo
 
@@ -42,19 +53,22 @@ class Crawl_bot:
         self.initiate_directory()
         self.crawl_page('Spider starts here', Crawl_bot.start_link)
 
+    # Define and create new directory on the first run
     @staticmethod
-    def initiate_directory():                   # Define and create new directory on the first run
+    def initiate_directory():
         create_project_folder(Crawl_bot.folder_name)
         create_data_files(Crawl_bot.folder_name, Crawl_bot.start_link)
         Crawl_bot.queue = convert_to_set(Crawl_bot.queued_data)
         Crawl_bot.data_crawled = convert_to_set(Crawl_bot.crawled_data)
 
     @staticmethod
-    def crawl_page(thread_name, web_url):      # Fill queue and then update files, also updating user display
+    # Fill queue and then update files, also updating user display
+    def crawl_page(thread_name, web_url):
         print(web_url)
         if web_url not in Crawl_bot.data_crawled:
             print(thread_name + ' now crawl starts ' + web_url)
-            print('Queue_url ' + str(len(Crawl_bot.queue)) + ' | Crawled_url  ' + str(len(Crawl_bot.data_crawled)))
+            print('Queue_url ' + str(len(Crawl_bot.queue)) +
+                  ' | Crawled_url  ' + str(len(Crawl_bot.data_crawled)))
             Crawl_bot.add_url_to_queue(Crawl_bot.collect_url(web_url))
             Crawl_bot.queue.remove(web_url)
             Crawl_bot.data_crawled.add(web_url)
@@ -72,29 +86,29 @@ class Crawl_bot:
             link_finder = link_crawler(Crawl_bot.start_link, web_url)
             link_finder.feed(html_data_string)
 
-##############################################################################################################################################################################################
-#######################################FOR SCRAPPING PURPOSES#################################################################################################################################
-            f = open(Crawl_bot.folder_name + '/' + ((tldextract.extract(web_url)).domain), 'a')
+####################################################################################
+# FOR SCRAPPING PURPOSES
+            f = open(Crawl_bot.folder_name + '/' +
+                     ((tldextract.extract(web_url)).domain), 'a')
             f.write(html_data_string + "\n\n\n" + '#####EOF#####' + "\n\n\n")
             f.close()
-###############################################################################################################################################################################################
-###############################################################################################################################################################################################
+####################################################################################
 
         except Exception as e:
             print(str(e))
             return set()
         return link_finder.page_urls()
 
-
+    # Queue data saves to project files
     @staticmethod
-    def add_url_to_queue(links):          # Queue data saves to project files
+    def add_url_to_queue(links):
         for url in links:
             if (url in Crawl_bot.queue) or (url in Crawl_bot.data_crawled):
                 continue
             Crawl_bot.queue.add(url)
 
-
+    # Update the project directory
     @staticmethod
-    def update_folder():                    # Update the project directory
+    def update_folder():
         set_to_file(Crawl_bot.queue, Crawl_bot.queued_data)
         set_to_file(Crawl_bot.data_crawled, Crawl_bot.crawled_data)
