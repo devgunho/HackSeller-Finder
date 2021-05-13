@@ -19,9 +19,19 @@ search_box = WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.NAME, "q")))
 search_box.send_keys("Game Hack")
 search_box.submit()
+
+# More Results
+driver.find_element_by_id("rld-1").click()
+driver.find_element_by_id("rld-2").click()
+driver.find_element_by_id("rld-3").click()
+
 elements = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located(
     (By.XPATH, "//div[@id='links']/div/div/div[2]")))
-for ele in elements:
-    print(ele.text)
-    print("--------------")
+
+doc_cnt = 0
+for doc in elements:
+    doc_cnt += 1
+    print("--------------", doc_cnt, "--------------")
+    print(doc.text)
+
 # driver.quit()
