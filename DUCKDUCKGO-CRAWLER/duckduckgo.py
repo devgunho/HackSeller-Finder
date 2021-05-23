@@ -1,3 +1,4 @@
+import csv
 import os
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
@@ -17,21 +18,35 @@ driver = webdriver.Chrome(chrome_options=options,
 driver.get('https://duckduckgo.com/')
 search_box = WebDriverWait(driver, 20).until(
     EC.element_to_be_clickable((By.NAME, "q")))
-search_box.send_keys("Game Hack")
+search_box.send_keys("Maple Story Game Hack")
 search_box.submit()
 
 # More Results
-driver.find_element_by_id("rld-1").click()
-driver.find_element_by_id("rld-2").click()
-driver.find_element_by_id("rld-3").click()
+show_btn = "rld-"
+show_btn_counter = 1
+while(1):
+    now_btn = show_btn+str(show_btn_counter)
+    try:
+        driver.find_element_by_id(now_btn).click()
+        print("Find Btn.", now_btn)
+        show_btn_counter += 1
+    except:
+        break
 
-elements = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located(
+
+# Show result text
+result_elements = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located(
     (By.XPATH, "//div[@id='links']/div/div/div[2]")))
 
-doc_cnt = 0
-for doc in elements:
-    doc_cnt += 1
-    print("--------------", doc_cnt, "--------------")
-    print(doc.text)
+f = open('output.csv', 'w', encoding='utf-8', newline='')
+wr = csv.writer(f)
+wr.writerow(["num", "text"])
+text_cnt = 0
+for result_text in result_elements:
+    text_cnt += 1
+    print("--------------", text_cnt, "--------------")
+    print(result_text.text)
+    wr.writerow([text_cnt, result_text.text])
+f.close
 
-# driver.quit()
+driver.quit()
