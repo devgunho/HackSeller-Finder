@@ -1,7 +1,7 @@
 from multiprocessing import Pool
 import os
 
-with open("onionlinks.txt", "r") as websites:
+with open("target_urls.txt", "r") as websites:
     content = websites.read().splitlines()
 
 def jaadu(url):
