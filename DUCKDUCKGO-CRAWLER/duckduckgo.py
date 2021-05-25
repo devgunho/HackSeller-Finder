@@ -35,18 +35,22 @@ while(1):
 
 
 # Show result text
-result_elements = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located(
+result_urls = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located(
+    (By.XPATH, "//div[@id='links']/div/div/div[1]/div/a")))
+result_documents = WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located(
     (By.XPATH, "//div[@id='links']/div/div/div[2]")))
 
 f = open('output.csv', 'w', encoding='utf-8', newline='')
 wr = csv.writer(f)
-wr.writerow(["num", "text"])
+wr.writerow(["num", "url", "text"])
 text_cnt = 0
-for result_text in result_elements:
+for result_url, result_text in zip(result_urls, result_documents):
     text_cnt += 1
-    print("--------------", text_cnt, "--------------")
+    print("--------------", text_cnt,
+          "--------------")
+    print(result_url.get_attribute('href'))
     print(result_text.text)
-    wr.writerow([text_cnt, result_text.text])
+    wr.writerow([text_cnt, result_url.get_attribute('href'), result_text.text])
 f.close
 
 driver.quit()
