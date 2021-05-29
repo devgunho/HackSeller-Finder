@@ -55,15 +55,15 @@ for i in [10, 30, 50, 100]:
         sns.set(rc={'figure.figsize': (15, 15)})
         # colors
         palette = sns.color_palette(
-            "hls", len(set(df.url.values.tolist())))
-        y = df.url.values.tolist()
+            "hls", len(set(df.category.values.tolist())))
+        y = df.category.values.tolist()
         # plot
-        # sns.scatterplot(X_embedded[:, 0], X_embedded[:, 1], hue=y, palette=palette)
-        sns.scatterplot(X_embedded[:, 0], X_embedded[:, 1],
-                        hue=y, legend=False, palette=palette)
+        sns.scatterplot(X_embedded[:, 0],
+                        X_embedded[:, 1], hue=y, palette=palette)
+        # sns.scatterplot(X_embedded[:,0], X_embedded[:,1], hue=y, legend=False, palette=palette)
         title = "t-SNE- JS group - TfIdf - " + \
             ngram_str+"- tSNE perplexity - "+str(i)
-        # plt.legend(loc='upper right', bbox_to_anchor=(1.2, 1))
+        plt.legend(loc='upper right', bbox_to_anchor=(1.2, 1));
         plt.savefig(title)
         plt.title(title)
         plt.show()
