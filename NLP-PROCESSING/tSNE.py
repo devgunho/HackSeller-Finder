@@ -52,7 +52,7 @@ for i in [10, 30, 50, 100]:
         ngram_str = str(ngram[0])+"_"+str(ngram[1])
         perp_components[i][ngram_str] = X_embedded
         # sns settings
-        sns.set(rc={'figure.figsize': (15, 15)})
+        sns.set(rc={'figure.figsize': (8, 8)})
         # colors
         palette = sns.color_palette(
             "hls", len(set(df.url.values.tolist())))

@@ -38,6 +38,8 @@ nltk.download("wordnet")
 def clean_text(text):
     return " ".join([Word(word).lemmatize() for word in re.sub("[^A-Za-z0-9]+", " ", text).lower().split() if word not in stopword])
 
+stopword = stopwords.words('english')
+df['clean-text'] = df.text.apply(lambda row: clean_text(str(row)) )
 # %%
 
 
