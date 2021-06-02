@@ -1,0 +1,6 @@
+applications:
+- name: natural-language-understanding-demo
+  path: .
+  buildpack: sdk-for-nodejs
+  command: npm start
+  memory: 512M
