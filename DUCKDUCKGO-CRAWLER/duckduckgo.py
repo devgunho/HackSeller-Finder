@@ -39,6 +39,7 @@ for index, row in df_games.iterrows():
         while(1):
             now_btn = show_btn+str(show_btn_counter)
             try:
+                driver.implicitly_wait(5)
                 driver.find_element_by_id(now_btn).click()
                 print("Find Btn.", now_btn)
                 show_btn_counter += 1
@@ -64,6 +65,6 @@ for index, row in df_games.iterrows():
             print(result_text.text)
             wr.writerow(
                 [text_cnt, result_url.get_attribute('href'), result_text.text])
-        f.close
+        # f.close
 
-        driver.quit()
+        # driver.quit()
