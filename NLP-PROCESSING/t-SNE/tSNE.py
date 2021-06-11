@@ -24,7 +24,7 @@ from gensim.models import CoherenceModel
 import matplotlib.pyplot as plt
 
 # %%
-df = pd.read_csv('./merged_text.csv')
+df = pd.read_csv('../merged_text.csv')
 
 # LIMIT = 10
 # df = df[:LIMIT]
@@ -67,3 +67,5 @@ for i in [10, 30, 50, 100]:
         plt.savefig(title)
         plt.title(title)
         plt.show()
+
+# %%

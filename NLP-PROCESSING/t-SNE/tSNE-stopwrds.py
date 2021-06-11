@@ -24,7 +24,7 @@ from gensim.models import CoherenceModel
 import matplotlib.pyplot as plt
 
 # %%
-df = pd.read_csv('./merged_text.csv')
+df = pd.read_csv('../merged_text_PUBG.csv')
 
 # LIMIT = 10
 # df = df[:LIMIT]
@@ -38,8 +38,9 @@ nltk.download("wordnet")
 def clean_text(text):
     return " ".join([Word(word).lemmatize() for word in re.sub("[^A-Za-z0-9]+", " ", text).lower().split() if word not in stopword])
 
+
 stopword = stopwords.words('english')
-df['clean-text'] = df.text.apply(lambda row: clean_text(str(row)) )
+df['clean-text'] = df.text.apply(lambda row: clean_text(str(row)))
 # %%
 
 
@@ -54,7 +55,7 @@ for i in [10, 30, 50, 100]:
         ngram_str = str(ngram[0])+"_"+str(ngram[1])
         perp_components[i][ngram_str] = X_embedded
         # sns settings
-        sns.set(rc={'figure.figsize': (15, 15)})
+        sns.set(rc={'figure.figsize': (8, 8)})
         # colors
         palette = sns.color_palette(
             "hls", len(set(df.category.values.tolist())))
@@ -65,7 +66,9 @@ for i in [10, 30, 50, 100]:
         # sns.scatterplot(X_embedded[:,0], X_embedded[:,1], hue=y, legend=False, palette=palette)
         title = "t-SNE- JS group - TfIdf - " + \
             ngram_str+"- tSNE perplexity - "+str(i)
-        plt.legend(loc='upper right', bbox_to_anchor=(1.2, 1));
+        plt.legend(loc='upper right', bbox_to_anchor=(1.2, 1))
         plt.savefig(title)
         plt.title(title)
         plt.show()
+
+# %%
