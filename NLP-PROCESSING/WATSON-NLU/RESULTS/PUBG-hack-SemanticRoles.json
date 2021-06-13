@@ -1,0 +1,840 @@
+{
+	"semantic_roles": [
+		{
+			"subject": {
+				"text": "Battlegrounds hacks"
+			},
+			"sentence": "Battlegrounds hacks will take you far, but a great drop will help kick it up a notch.",
+			"object": {
+				"text": "you"
+			},
+			"action": {
+				"verb": {
+					"text": "take",
+					"tense": "future"
+				},
+				"text": "will take",
+				"normalized": "will take"
+			}
+		},
+		{
+			"subject": {
+				"text": "a great drop"
+			},
+			"sentence": "Battlegrounds hacks will take you far, but a great drop will help kick it up a notch.",
+			"object": {
+				"text": "kick it up a notch"
+			},
+			"action": {
+				"verb": {
+					"text": "help",
+					"tense": "future"
+				},
+				"text": "will help",
+				"normalized": "will help"
+			}
+		},
+		{
+			"subject": {
+				"text": "a lot of things to remember"
+			},
+			"sentence": " There are a lot of things to remember when it comes to players PUBG, but knowing the map will always remain a top priority.",
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "are",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "the map"
+			},
+			"sentence": " There are a lot of things to remember when it comes to players PUBG, but knowing the map will always remain a top priority.",
+			"action": {
+				"verb": {
+					"text": "remain",
+					"tense": "future"
+				},
+				"text": "remain",
+				"normalized": "remain"
+			}
+		},
+		{
+			"subject": {
+				"text": "you"
+			},
+			"sentence": " Well, that and ensuring that you've got the best playerunkown's battlegrounds hack on your side.",
+			"object": {
+				"text": "the best playerunkown's battlegrounds"
+			},
+			"action": {
+				"verb": {
+					"text": "get",
+					"tense": "past"
+				},
+				"text": "got",
+				"normalized": "get"
+			}
+		},
+		{
+			"subject": {
+				"text": "the best playerunkown's battlegrounds"
+			},
+			"sentence": " Well, that and ensuring that you've got the best playerunkown's battlegrounds hack on your side.",
+			"action": {
+				"verb": {
+					"text": "hack",
+					"tense": "present"
+				},
+				"text": "hack",
+				"normalized": "hack"
+			}
+		},
+		{
+			"subject": {
+				"text": "we"
+			},
+			"sentence": " Playerunknown Battlegrounds Hacks - How we keep them safe.",
+			"object": {
+				"text": "them"
+			},
+			"action": {
+				"verb": {
+					"text": "keep",
+					"tense": "present"
+				},
+				"text": "keep",
+				"normalized": "keep"
+			}
+		},
+		{
+			"subject": {
+				"text": "free pubg cheats"
+			},
+			"sentence": " Always be on the lookout if hack providers are the real deal, and also never download free pubg cheats from a forum.",
+			"object": {
+				"text": "from a forum"
+			},
+			"action": {
+				"verb": {
+					"text": "download",
+					"tense": "present"
+				},
+				"text": "download",
+				"normalized": "download"
+			}
+		},
+		{
+			"subject": {
+				"text": "An aimbot"
+			},
+			"sentence": " An aimbot is a tool that allows you to shoot your enemies without having to aim manually.",
+			"object": {
+				"text": "a tool"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "is",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "a tool"
+			},
+			"sentence": " An aimbot is a tool that allows you to shoot your enemies without having to aim manually.",
+			"object": {
+				"text": "you to shoot your enemies without having to aim manually"
+			},
+			"action": {
+				"verb": {
+					"text": "allow",
+					"tense": "present"
+				},
+				"text": "allows",
+				"normalized": "allow"
+			}
+		},
+		{
+			"subject": {
+				"text": "you"
+			},
+			"sentence": " An aimbot is a tool that allows you to shoot your enemies without having to aim manually.",
+			"object": {
+				"text": "to aim manually"
+			},
+			"action": {
+				"verb": {
+					"text": "have",
+					"tense": "present"
+				},
+				"text": "having",
+				"normalized": "have"
+			}
+		},
+		{
+			"subject": {
+				"text": "It"
+			},
+			"sentence": " It helps you to shoot more accurately with less skill.",
+			"object": {
+				"text": "you to shoot more accurately with less skill"
+			},
+			"action": {
+				"verb": {
+					"text": "help",
+					"tense": "present"
+				},
+				"text": "helps",
+				"normalized": "help"
+			}
+		},
+		{
+			"subject": {
+				"text": "Our PUBG hack"
+			},
+			"sentence": " Our PUBG hack are completely undetected so there is no risk to your account.",
+			"object": {
+				"text": "completely undetected"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "are",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "no risk"
+			},
+			"sentence": " Our PUBG hack are completely undetected so there is no risk to your account.",
+			"object": {
+				"text": "to your account"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "is",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "this"
+			},
+			"sentence": " If you're already familiar with cheats and such, then this won't be a very big surprise to you.",
+			"object": {
+				"text": "a very big surprise to you"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "future",
+					"negated": true
+				},
+				"text": "be",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "PlayerUnknown's Battlegrounds"
+			},
+			"sentence": " PlayerUnknown's Battlegrounds is the newest rendition of shooter games to be considered, and it's much better than ...",
+			"object": {
+				"text": "the newest rendition of shooter games"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "is",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "it"
+			},
+			"sentence": " PlayerUnknown's Battlegrounds is the newest rendition of shooter games to be considered, and it's much better than ...",
+			"object": {
+				"text": "much"
+			},
+			"action": {
+				"verb": {
+					"text": "has",
+					"tense": "present"
+				},
+				"text": "has",
+				"normalized": "has"
+			}
+		},
+		{
+			"subject": {
+				"text": "guides reviews"
+			},
+			"sentence": " GFX Tool for BattleGrounds (NEW) V.18 tricks hints guides reviews promo codes easter eggs and more for android application.",
+			"object": {
+				"text": "codes easter eggs"
+			},
+			"action": {
+				"verb": {
+					"text": "promo",
+					"tense": "present"
+				},
+				"text": "promo",
+				"normalized": "promo"
+			}
+		},
+		{
+			"subject": {
+				"text": "guides reviews promo codes"
+			},
+			"sentence": " GFX Tool for BattleGrounds (NEW) V.18 tricks hints guides reviews promo codes easter eggs and more for android application.",
+			"object": {
+				"text": "eggs"
+			},
+			"action": {
+				"verb": {
+					"text": "easter",
+					"tense": "present"
+				},
+				"text": "easter",
+				"normalized": "easter"
+			}
+		},
+		{
+			"subject": {
+				"text": "by pro players, testers and users"
+			},
+			"sentence": " Avoid GFX Tool for BattleGrounds (NEW) V.18 hack cheats for your own safety, choose our tips and advices confirmed by pro players, testers and users like you.",
+			"object": {
+				"text": "advices"
+			},
+			"action": {
+				"verb": {
+					"text": "confirm",
+					"tense": "past"
+				},
+				"text": "confirmed",
+				"normalized": "confirm"
+			}
+		},
+		{
+			"subject": {
+				"text": "&"
+			},
+			"sentence": " Ask a question or add answers, watch video tutorials & submit own opinion about this game/app.",
+			"object": {
+				"text": "own opinion"
+			},
+			"action": {
+				"verb": {
+					"text": "submit",
+					"tense": "present"
+				},
+				"text": "submit",
+				"normalized": "submit"
+			}
+		},
+		{
+			"subject": {
+				"text": "the best Bullet Strike Battlegrounds gamer and accelerating the progress for winning the game"
+			},
+			"sentence": " Evolving into the best Bullet Strike Battlegrounds gamer and accelerating the progress for winning the game is easy.",
+			"object": {
+				"text": "easy"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "is",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "we"
+			},
+			"sentence": " Playerunknown Battlegrounds Hacks - Why we are Safest Cheats Provider Our developers at Lavicheats have designed metamorphic cheats with signature methods and custom, encrypted code to ensure that they stay undetectable to various anti-cheat software and tools, including BattleEye, VAC, and Xenuine.",
+			"object": {
+				"text": "Safest Cheats Provider Our developers at Lavicheats"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "are",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "Safest Cheats Provider Our developers at Lavicheats"
+			},
+			"sentence": " Playerunknown Battlegrounds Hacks - Why we are Safest Cheats Provider Our developers at Lavicheats have designed metamorphic cheats with signature methods and custom, encrypted code to ensure that they stay undetectable to various anti-cheat software and tools, including BattleEye, VAC, and Xenuine.",
+			"object": {
+				"text": "that they stay undetectable to various anti-cheat software and tools, including BattleEye, VAC, and Xenuine"
+			},
+			"action": {
+				"verb": {
+					"text": "ensure",
+					"tense": "future"
+				},
+				"text": "to ensure",
+				"normalized": "to ensure"
+			}
+		},
+		{
+			"subject": {
+				"text": "BattleEye, VAC, and Xenuine"
+			},
+			"sentence": " Playerunknown Battlegrounds Hacks - Why we are Safest Cheats Provider Our developers at Lavicheats have designed metamorphic cheats with signature methods and custom, encrypted code to ensure that they stay undetectable to various anti-cheat software and tools, including BattleEye, VAC, and Xenuine.",
+			"object": {
+				"text": "various anti-cheat software and tools"
+			},
+			"action": {
+				"verb": {
+					"text": "include",
+					"tense": "present"
+				},
+				"text": "including",
+				"normalized": "include"
+			}
+		},
+		{
+			"subject": {
+				"text": "free ressources"
+			},
+			"sentence": " Visit this webpage to generate free ressources now with our new Online HACK!",
+			"action": {
+				"verb": {
+					"text": "generate",
+					"tense": "future"
+				},
+				"text": "to generate",
+				"normalized": "to generate"
+			}
+		},
+		{
+			"subject": {
+				"text": "Free Fire Battlegrounds"
+			},
+			"sentence": " Free Fire Battlegrounds Hack Online Tool .",
+			"object": {
+				"text": "Online Tool"
+			},
+			"action": {
+				"verb": {
+					"text": "Hack",
+					"tense": "present"
+				},
+				"text": "Hack",
+				"normalized": "Hack"
+			}
+		},
+		{
+			"subject": {
+				"text": "Free Fire Battlegrounds"
+			},
+			"sentence": " Free Fire Battlegrounds Hack Diamonds & Coins Generator.",
+			"object": {
+				"text": "Diamonds & Coins Generator"
+			},
+			"action": {
+				"verb": {
+					"text": "Hack",
+					"tense": "present"
+				},
+				"text": "Hack",
+				"normalized": "Hack"
+			}
+		},
+		{
+			"subject": {
+				"text": "one of our proxy servers"
+			},
+			"sentence": " Please choose one of our proxy servers from the options below.",
+			"object": {
+				"text": "from the options below"
+			},
+			"action": {
+				"verb": {
+					"text": "choose",
+					"tense": "present"
+				},
+				"text": "Please choose",
+				"normalized": "Please choose"
+			}
+		},
+		{
+			"subject": {
+				"text": "Playerunknown's Battlegrounds on Steam"
+			},
+			"sentence": " Right now Playerunknown's Battlegrounds on Steam is the most popular game being played with over 450,000 daily players.",
+			"object": {
+				"text": "the most popular game being played with over 450,000 daily players"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "is",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "70% of the player base on PUBG"
+			},
+			"sentence": " 70% of the player base on PUBG is currently using hacks.",
+			"object": {
+				"text": "currently using hacks"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "is",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "PUBG"
+			},
+			"sentence": " 70% of the player base on PUBG is currently using hacks.",
+			"object": {
+				"text": "hacks"
+			},
+			"action": {
+				"verb": {
+					"text": "use",
+					"tense": "present"
+				},
+				"text": "using",
+				"normalized": "use"
+			}
+		},
+		{
+			"subject": {
+				"text": "Hack PUBG"
+			},
+			"sentence": " Hack PUBG to win every round of PUBG that you play.",
+			"object": {
+				"text": "every round of PUBG that you play"
+			},
+			"action": {
+				"verb": {
+					"text": "win",
+					"tense": "future"
+				},
+				"text": "to win",
+				"normalized": "to win"
+			}
+		},
+		{
+			"subject": {
+				"text": "App BAGT"
+			},
+			"sentence": " The description of Battlegrounds Advanced Graphics Tool [NO BAN] App BAGT is developed for people who wants to fully customize and optimize graphics and get you more Chicken Dinners.",
+			"object": {
+				"text": "developed for people"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "is",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "people"
+			},
+			"sentence": " The description of Battlegrounds Advanced Graphics Tool [NO BAN] App BAGT is developed for people who wants to fully customize and optimize graphics and get you more Chicken Dinners.",
+			"object": {
+				"text": "to fully customize and optimize graphics and get you more Chicken Dinners"
+			},
+			"action": {
+				"verb": {
+					"text": "want",
+					"tense": "present"
+				},
+				"text": "wants",
+				"normalized": "want"
+			}
+		},
+		{
+			"subject": {
+				"text": "people"
+			},
+			"sentence": " The description of Battlegrounds Advanced Graphics Tool [NO BAN] App BAGT is developed for people who wants to fully customize and optimize graphics and get you more Chicken Dinners.",
+			"object": {
+				"text": "graphics"
+			},
+			"action": {
+				"verb": {
+					"text": "optimize",
+					"tense": "present"
+				},
+				"text": "optimize",
+				"normalized": "optimize"
+			}
+		},
+		{
+			"subject": {
+				"text": "people"
+			},
+			"sentence": " The description of Battlegrounds Advanced Graphics Tool [NO BAN] App BAGT is developed for people who wants to fully customize and optimize graphics and get you more Chicken Dinners.",
+			"object": {
+				"text": "you"
+			},
+			"action": {
+				"verb": {
+					"text": "get",
+					"tense": "present"
+				},
+				"text": "get",
+				"normalized": "get"
+			}
+		},
+		{
+			"subject": {
+				"text": "this"
+			},
+			"sentence": " Ranging from midrange to flagship phones, this is the perfect tool for better gaming experience.",
+			"object": {
+				"text": "the perfect tool"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "is",
+				"normalized": "be"
+			}
+		},
+		{
+			"subject": {
+				"text": "you"
+			},
+			"sentence": " The Hack Tool for 365cheats.com Free Fire Battlegrounds also work for Android, iOS and Facebook which you decide on before using the generator and follow the instructions.",
+			"action": {
+				"verb": {
+					"text": "decide",
+					"tense": "present"
+				},
+				"text": "decide",
+				"normalized": "decide"
+			}
+		},
+		{
+			"subject": {
+				"text": "you"
+			},
+			"sentence": " The Hack Tool for 365cheats.com Free Fire Battlegrounds also work for Android, iOS and Facebook which you decide on before using the generator and follow the instructions.",
+			"object": {
+				"text": "the generator"
+			},
+			"action": {
+				"verb": {
+					"text": "use",
+					"tense": "present"
+				},
+				"text": "using",
+				"normalized": "use"
+			}
+		},
+		{
+			"subject": {
+				"text": "you"
+			},
+			"sentence": " The Hack Tool for 365cheats.com Free Fire Battlegrounds also work for Android, iOS and Facebook which you decide on before using the generator and follow the instructions.",
+			"object": {
+				"text": "the instructions"
+			},
+			"action": {
+				"verb": {
+					"text": "follow",
+					"tense": "present"
+				},
+				"text": "follow",
+				"normalized": "follow"
+			}
+		},
+		{
+			"subject": {
+				"text": "It"
+			},
+			"sentence": " It's clear that you have a lot of advantages in the game by using the 365cheats.com Free Fire Battlegrounds Tools.",
+			"object": {
+				"text": "clear that you have a lot of advantages in the game"
+			},
+			"action": {
+				"verb": {
+					"text": "has",
+					"tense": "present"
+				},
+				"text": "has",
+				"normalized": "has"
+			}
+		},
+		{
+			"subject": {
+				"text": "you"
+			},
+			"sentence": " It's clear that you have a lot of advantages in the game by using the 365cheats.com Free Fire Battlegrounds Tools.",
+			"object": {
+				"text": "the 365cheats.com Free Fire Battlegrounds Tools"
+			},
+			"action": {
+				"verb": {
+					"text": "use",
+					"tense": "present"
+				},
+				"text": "using",
+				"normalized": "use"
+			}
+		},
+		{
+			"subject": {
+				"text": "cheat playerunknown's battlegrounds"
+			},
+			"sentence": " cheat playerunknown's battlegrounds cheat PUBG hack PUBG hack PUBG free playerunknown's battlegrounds crack playerunknown's battlegrounds hack PUBG TOOL V 1.0 PUBG TOOL V 1.5 PUBG TOOL V 1.7 PUBG TOOL V 2.0 PUBG TOOL V 2.0 beta.",
+			"object": {
+				"text": "PUBG hack PUBG hack PUBG"
+			},
+			"action": {
+				"verb": {
+					"text": "cheat",
+					"tense": "present"
+				},
+				"text": "cheat",
+				"normalized": "cheat"
+			}
+		},
+		{
+			"subject": {
+				"text": "PUBG"
+			},
+			"sentence": " cheat playerunknown's battlegrounds cheat PUBG hack PUBG hack PUBG free playerunknown's battlegrounds crack playerunknown's battlegrounds hack PUBG TOOL V 1.0 PUBG TOOL V 1.5 PUBG TOOL V 1.7 PUBG TOOL V 2.0 PUBG TOOL V 2.0 beta.",
+			"object": {
+				"text": "PUBG free playerunknown's battlegrounds"
+			},
+			"action": {
+				"verb": {
+					"text": "hack",
+					"tense": "present"
+				},
+				"text": "hack",
+				"normalized": "hack"
+			}
+		},
+		{
+			"subject": {
+				"text": "PUBG free playerunknown's battlegrounds"
+			},
+			"sentence": " cheat playerunknown's battlegrounds cheat PUBG hack PUBG hack PUBG free playerunknown's battlegrounds crack playerunknown's battlegrounds hack PUBG TOOL V 1.0 PUBG TOOL V 1.5 PUBG TOOL V 1.7 PUBG TOOL V 2.0 PUBG TOOL V 2.0 beta.",
+			"object": {
+				"text": "playerunknown's battlegrounds"
+			},
+			"action": {
+				"verb": {
+					"text": "crack",
+					"tense": "present"
+				},
+				"text": "crack",
+				"normalized": "crack"
+			}
+		},
+		{
+			"subject": {
+				"text": "playerunknown's battlegrounds"
+			},
+			"sentence": " cheat playerunknown's battlegrounds cheat PUBG hack PUBG hack PUBG free playerunknown's battlegrounds crack playerunknown's battlegrounds hack PUBG TOOL V 1.0 PUBG TOOL V 1.5 PUBG TOOL V 1.7 PUBG TOOL V 2.0 PUBG TOOL V 2.0 beta.",
+			"object": {
+				"text": "PUBG TOOL V 1.0 PUBG TOOL V 1.5 PUBG TOOL V 1.7 PUBG TOOL V 2.0 PUBG TOOL V 2.0 beta"
+			},
+			"action": {
+				"verb": {
+					"text": "hack",
+					"tense": "present"
+				},
+				"text": "hack",
+				"normalized": "hack"
+			}
+		},
+		{
+			"subject": {
+				"text": "I"
+			},
+			"sentence": " Total Pageviews \"I do not have much time, so I need it to improve my ability.\"",
+			"object": {
+				"text": "it to improve my ability"
+			},
+			"action": {
+				"verb": {
+					"text": "need",
+					"tense": "present"
+				},
+				"text": "need",
+				"normalized": "need"
+			}
+		},
+		{
+			"subject": {
+				"text": "Free Fire Battlegrounds Hack Tool 4U For Pro Players 癤퓑ithout paying a dime. free fire garena"
+			},
+			"sentence": " Free Fire Battlegrounds Hack Tool 4U For Pro Players 癤퓑ithout paying a dime. free fire garena became a requirement have for many gamers as everyone is making an attempt to achieve a glance that is unique and superior to alternative players.",
+			"object": {
+				"text": "a requirement"
+			},
+			"action": {
+				"verb": {
+					"text": "become",
+					"tense": "past"
+				},
+				"text": "became",
+				"normalized": "become"
+			}
+		},
+		{
+			"subject": {
+				"text": "everyone"
+			},
+			"sentence": " Free Fire Battlegrounds Hack Tool 4U For Pro Players 癤퓑ithout paying a dime. free fire garena became a requirement have for many gamers as everyone is making an attempt to achieve a glance that is unique and superior to alternative players.",
+			"object": {
+				"text": "making an attempt to achieve a glance that is unique and superior to alternative players"
+			},
+			"action": {
+				"verb": {
+					"text": "be",
+					"tense": "present"
+				},
+				"text": "is",
+				"normalized": "be"
+			}
+		}
+	]
+}
